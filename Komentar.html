@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Komentar</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #8fd3f4, #f8f9fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .comment-container {
+            background: linear-gradient(to right, #8fd3f4, #ffffff);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+        }
+
+        .comment-container h2 {
+            color: #495057;
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background: linear-gradient(to right, #4caf50, #f8f9fa);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .feedback-box {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .back-button {
+            background: linear-gradient(to right, #4caf50, #8fd3f4);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            filter: brightness(90%);
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-container">
+        <h2>Menu Komentar</h2>
+        <form action="path_ke_script_server" method="post">
+            <div class="comment-input">
+                <textarea name="komentar" placeholder="Tulis komentar Anda" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div class="feedback-box">
+            <strong>Feedback:</strong>
+            <p>Bisa dengan saran dan kritik agar bisa lebih baik.</p>
+        </div>
+        <a href="Index.html" class="back-button">Kembali</a>
+    </div>
+</body>
+</html>

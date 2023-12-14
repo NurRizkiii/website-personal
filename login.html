@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Menu</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #8fd3f4, #f8f9fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container h2 {
+            color: #495057;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .login-button, .back-button {
+            background: linear-gradient(to right, #4caf50, #f8f9fa);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            background: linear-gradient(to right, #ffc107, #4caf50);
+            margin-right: 10px;
+        }
+
+        .login-button:hover, .back-button:hover {
+            filter: brightness(90%);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Menu</h2>
+        <form action="Home.html" method="get">
+            <div class="login-input">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="login-input">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('.back-button').addEventListener('click', function() {
+            // Ganti window.location.href dengan path yang sesuai dengan halaman kembali yang diinginkan
+            window.location.href = 'path_ke_halaman_kembali.html';
+        });
+    </script>
+</body>
+</html>
+

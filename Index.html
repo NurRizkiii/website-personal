@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplor Bima/Dana Mbojo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+			background:ADD8E6; /* Ganti 'bima.jpeg' dengan nama file gambar Anda */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Warna teks putih */
+            animation: colorChange 5s infinite alternate; /* Animasi perubahan warna teks */
+        }
+
+        @keyframes colorChange {
+            from { color: #fff; }
+            to { color: #FAFAD2; }
+        }
+
+        header {
+            background-color: #87CEFA;
+            padding: 20px 0;
+            text-align: center;
+            animation: moveUpAndDown 3s infinite alternate; /* Animasi gerakan header */
+        }
+
+        @keyframes moveUpAndDown {
+            from { transform: translateY(0); }
+            to { transform: translateY(10px); }
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            text-align: center;
+            animation: moveUpAndDown 3s infinite alternate; /* Animasi gerakan container */
+            background:#778899; /* Transparansi hitam pada container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: #87CEFA;
+            border-radius: 5px;
+            transition:87CEFA; /* Menambahkan efek transisi transform */
+            cursor: pointer; /* Menambahkan pointer cursor saat diarahkan ke tombol */
+        }
+
+        .cta-button:hover {
+            background-color: #FFD700;
+        }
+
+        .cta-button:active {
+            background-color: #FFD700; /* Warna saat tombol ditekan */
+            transform: scale(0.95); /* Mengurangi ukuran tombol saat ditekan */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eksplor Bima/Dana Mbojo</h1>
+        <nav>
+            <a href="#">Home</a>
+			<a href="login.html">Login</a>
+            <a href="about.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Komentar.html">Komentar</a>
+			<a href="Data-Kunjungaan.php">Kunjungan</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Selamat Datang di situs Eksplor Dana Mbojo </h1>
+        <p>Tempat terbaik untuk kamu kunjungi.</p>
+        <a href="EksplorBima.php" class="cta-button">Mulai Berkunjug</a>
+    </div>
+
+</body>
+</html>
